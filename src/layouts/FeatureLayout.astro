@@ -1,0 +1,18 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { title, heroTitle, heroSubtitle } = Astro.props;
+---
+
+<BaseLayout title={title}>
+  <div
+    class="bg-gradient-to-r from-red-800 to-blue-900 text-white p-8 rounded-lg mb-8 shadow-lg text-center"
+  >
+    <h1 class="text-4xl font-extrabold mb-2">{heroTitle}</h1>
+    <p class="text-lg text-blue-100">{heroSubtitle}</p>
+  </div>
+
+  <div class="content">
+    <slot />
+  </div>
+</BaseLayout>

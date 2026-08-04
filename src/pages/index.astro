@@ -1,11 +1,54 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Home | Spider-Verse Hub">
+  <section class="text-center py-8">
+    <h2 class="text-3xl font-bold text-red-500 mb-4">
+      Welcome to the Spider-Verse Hub
+    </h2>
+    <p class="text-gray-300 max-w-2xl mx-auto mb-6">
+      Since spider man is my favorite hero and in honour of the movie dropping
+      this week, explore the iconic universe of Spider-Man! From classic suits
+      to alternate dimension variants and cinematic representations, this site
+      covers the highlights of Marvel's favorite web-slinger.
+    </p>
+  </section>
+
+  <div class="grid md:grid-cols-3 gap-6 mt-6">
+    <div class="bg-slate-800 p-5 rounded-lg border border-slate-700">
+      <h3 class="text-xl font-semibold text-blue-400 mb-2">Iconic Suits</h3>
+      <p class="text-sm text-gray-300 mb-4">
+        Check out the high-tech and classic suits worn across comic books and
+        movies.
+      </p>
+      <a href="/suits" class="text-red-400 font-medium hover:underline text-sm"
+        >View Suits →</a
+      >
+    </div>
+    <div class="bg-slate-800 p-5 rounded-lg border border-slate-700">
+      <h3 class="text-xl font-semibold text-blue-400 mb-2">
+        Multiverse Variants
+      </h3>
+      <p class="text-sm text-gray-300 mb-4">
+        Learn about Peter Parker, Miles Morales, Gwen Stacy, and other famous
+        Spider-heroes.
+      </p>
+      <a
+        href="/variants"
+        class="text-red-400 font-medium hover:underline text-sm"
+        >Meet Variants →</a
+      >
+    </div>
+    <div class="bg-slate-800 p-5 rounded-lg border border-slate-700">
+      <h3 class="text-xl font-semibold text-blue-400 mb-2">Actors & Media</h3>
+      <p class="text-sm text-gray-300 mb-4">
+        Discover live-action portrayals by Tobey, Andrew, and Tom, plus top
+        animated series.
+      </p>
+      <a href="/media" class="text-red-400 font-medium hover:underline text-sm"
+        >Explore Actors →</a
+      >
+    </div>
+  </div>
+</BaseLayout>
