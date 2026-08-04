@@ -1,3 +1,11 @@
+name:atungdiwe  asinah
+ student number: 0411404433
+frameworks used: tailwind and astro
+
+
+
+
+
 # Astro Starter Kit: Basics
 
 ```sh
